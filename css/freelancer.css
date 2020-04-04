@@ -6,8 +6,27 @@
 
 body {
     overflow-x: hidden;
+    background-image: url('../img/mountain2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
 }
 
+.bg-adis {
+
+    background-image: url('../img/mountain2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: none;
+}
+
+.text-white{
+    color: #fff;
+}
+
+p{
+
+}
 a#top{
 position:fixed;
 background-color: none;    
@@ -36,7 +55,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #3193ff;
 }
 
 div.style-cartoon {
@@ -92,7 +111,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #3193ff;
 }
 
 hr.star-primary {
@@ -111,7 +130,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #3193ff;
 }
 
 header .container {
@@ -158,6 +177,10 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+
+    #quote{
+      margin-top: 100px;
+    }
 }
 
 @media(min-width:768px) {
@@ -188,6 +211,10 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background-image: url('../img/mountain2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: #000;*/
 }
 
 .navbar a:focus {
@@ -218,7 +245,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #3193ff;
 }
 
 section.success a,
@@ -311,7 +338,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #3193ff;
     background: #fff;
 }
 
@@ -364,7 +391,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #3193ff;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -390,7 +417,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #149c82;
+    background-color: #fff;
 }
 
 .btn-social {
