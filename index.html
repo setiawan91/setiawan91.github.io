@@ -24,10 +24,25 @@
     <!-- Custom CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        a:hover{
+            color: #fff;
+        }
+        
+        @media (max-width: 400px){
+            .jumbotron{
+                background-color: none;
+                border-top-left-radius:50px;
+                border-bottom-right-radius:50px;
+                height: 500px;        
+            }
+        }
 
+                
+    </style>
 </head>
 
 <body id="page-top" class="index">
@@ -79,8 +94,11 @@
         <div class="container" >
             
             <div class="row">
-                
-                    <div class="col-lg-3 col-sm-12 col-xs-12">
+                <div class="jumbotron" style=" background-color: #2ecc71;
+                border-top-left-radius:50px;
+                border-bottom-right-radius:50px;
+                height: 150px;"> 
+                    <div class="col-lg-2 col-sm-12 col-xs-12">
                         <center>
                         <img src="img/adies.png" class="img-circle" alt="adies.png"  style="border:5px solid #FFF;vertical-align: middle;width: 160px;height: 150px;border-radius: 50%;">
                         </center>
@@ -90,13 +108,13 @@
                         </center>
                     </div>
                
-                    <div class="col-lg-9 col-sm-12 col-xs-12">
-                        <div class="jumbotron" style="background-color: #2ecc71;"> 
+                    <div class="col-lg-10 col-sm-12 col-xs-12">
+                        
                         <p align="justify" style="color:#fff; font-size: 20px;margin: 10px;">
                             <i class="fa fa-quote-left"></i> Welcome to my portfolio site. This site is going to show you some of projects i have done. <i class="fa fa-quote-right"></i></p>
-                        </div>
+                        
                     </div>
-            
+                </div>
             </div>
         </div>
     </section>
@@ -360,14 +378,20 @@
                 </div>
                 <div class="col-lg-10">
                     <blockquote>
-                    <p align="justify" style="color: #fff;">Memulai belajar dunia pemrograman sejak kuliah dan mengaplikasikannya hingga bekerja saat ini. Jika anda ingin menghubungi pemilik situs ini, silahkan hubungi kontak dibawah.</p>
+                    <p align="justify" style="color: #fff;">Start to learn web programming stuff from 2013 until now. Passionately with web, mobile and technology. Contact me if there is anything to talk about.</p>
                     </blockquote>
                     <footer>
                         <div class="col-md-12">
                         <p class="text-left">
                         <small>
                             <span class="col-xs-12 col-lg-4"><i class="fa fa-laptop"></i> Web Developer &nbsp;</span>
-                            <span class="col-xs-12 col-lg-4"><i class="fa fa-phone"></i> 085770289748 </span>
+                            
+                            <a href="https://api.whatsapp.com/send?phone=6285770289748" class="text-white">
+                                <span class="col-xs-12 col-lg-4">
+                                    <i class="fa fa-whatsapp"></i> 6285770289748 
+                                </span>
+                            </a>
+                             
                         </small>
                         </p>
                         </div>
@@ -381,9 +405,15 @@
             </div>
         </div>
     </section>
-    <a id="top" href='#' data-toggle="tooltip" title="back to top">
-                <i class="fa fa-chevron-circle-up fa-1x"></i>
-            </a>
+    
+        <a id="top" href='#' data-toggle="tooltip" title="back to top">
+            <i class="fa fa-chevron-circle-up fa-1x"></i>
+        </a>
+    
+        <a id="wa" href='https://api.whatsapp.com/send?phone=6285770289748' data-toggle="tooltip" title="whatsapp me">
+            <i class="fa fa-whatsapp fa-1x"></i>
+        </a>
+    
     <!-- Footer -->
     <footer class="text-center">
         <!--
@@ -1086,9 +1116,9 @@
      <script type="text/javascript">
   
       var toper = $('#top');
+      var wa = $('#wa');
  
- 
-      $(window).scroll(function(){
+        $(window).scroll(function(){
               if ($(this).scrollTop() > 200) {
                   toper.fadeIn( 200 );
               } else {
@@ -1100,6 +1130,15 @@
             $('html, body').animate({scrollTop:0}, 750);
             return false;
         });
+
+        $(window).scroll(function(){
+              if ($(this).scrollTop() > 200) {
+                  wa.fadeIn( 200 );
+              } else {
+                  wa.fadeOut( 200 );
+              }
+        }); 
+ 
     </script>
 
 </body>

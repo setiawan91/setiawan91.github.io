@@ -24,9 +24,6 @@ body {
     color: #fff;
 }
 
-p{
-
-}
 a#top{
 position:fixed;
 background-color: none;    
@@ -36,6 +33,20 @@ right:15px;
 z-index:9;
 color:rgba(100,165,0,0.8);
 color:black;
+font-size:3em;
+padding: 4px;
+text-decoration: none;
+}
+
+a#wa{
+position:fixed;
+background-color: none;    
+display:none;
+bottom:15px;
+right:65px;
+z-index:9;
+color:rgba(100,165,0,0.8);
+color:#2ecc71;
 font-size:3em;
 padding: 4px;
 text-decoration: none;
@@ -211,10 +222,11 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background-image: url('../img/mountain2.jpeg');
+    /*background-image: url('../img/mountain2.jpeg');*/
     background-repeat: no-repeat;
     background-size: cover;
-    /*background-color: #000;*/
+    background-color: #ffffff;
+    color: #2ecc71;
 }
 
 .navbar a:focus {
