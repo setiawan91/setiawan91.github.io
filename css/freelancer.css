@@ -71,7 +71,7 @@ a.active {
 
 div.style-cartoon {
 height: 55px;
-background: url(../img/.png) no-repeat scroll right;
+/*background: url(../img/.png) no-repeat scroll right;*/
 background-size: 30px 30px;
 margin-left: -40px;
 }
